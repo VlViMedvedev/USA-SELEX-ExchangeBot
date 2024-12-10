@@ -12,10 +12,10 @@ class Notifier:
     def __init__(self):
         config = ConfigReader().read_config()
         self.recipients = [email.strip() for email in config.get("Email", "recipients", fallback="").split(",")]
-        self.sender_email = "eshmo@yandex.ru"
-        self.sender_password = "vfmcpjwqrcvpsinu"
-        self.smtp_server = "smtp.yandex.ru"
-        self.smtp_port = 587
+        self.sender_email = "***"
+        self.sender_password = "***"
+        self.smtp_server = "***"
+        self.smtp_port = ***
 
     def send_batch_email(self, problematic_files):
         """
